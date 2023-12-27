@@ -1,0 +1,19 @@
+/*Sempre importante lembrar do basico, mas tem que inserir os atributos destacados no arquivo css para funcionar o efeito de visibilidade*/
+
+.service_card{
+    opacity: 0; /* <---- Tornar o componente principal invisivel*/
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    width: 400px;
+    height: 280px;
+    background-color: #ffffff;
+    right: 30%;
+    top: 20%;
+    position: fixed;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in;
+}
+.service_card.appear{
+    opacity: 1; /* <---- Tornar o componente principal visivel quando a função for ativada (.appear)*/
+}
